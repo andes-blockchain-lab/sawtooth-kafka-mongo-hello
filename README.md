@@ -1,10 +1,20 @@
 # Hello World Sawtooth, Kafka, Mongodb and postgresql
 
-## Install Dependencies
+## Dependencies
 * [docker](https://docs.docker.com/engine/install/ubuntu/)
 * [docker-compose](https://docs.docker.com/compose/install/)
 * [node 10](https://nodejs.org/en/download/) maybe works with v12
 
+Use at least 4GB of RAM
+
+## Linux Install Dependencies
+
+```bash
+./install-dependencies.sh
+#Restart
+nvm install v10
+
+```
 
 ## Windows aditional dependencies (Requires revision)
 
@@ -22,15 +32,6 @@ Another option:
 
 ```bash
 npm install --global --production windows-build-toolsnpm config set msvs_version 2015 --global
-```
-
-## Linux Dependencies
-
-```bash
-./install-dependencies.sh
-#Restart
-nvm install v10
-
 ```
 
 # Runing
