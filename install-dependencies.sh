@@ -19,7 +19,7 @@ main(){
 
 	apt-get update
 
-	sudo apt-get install libtool pkg-config build-essential autoconf automake -y
+	sudo apt-get install libtool pkg-config build-essential autoconf automake dkms -y
 
 	install_docker
 	install_docker_compose
