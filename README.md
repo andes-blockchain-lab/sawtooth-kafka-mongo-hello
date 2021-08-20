@@ -40,8 +40,8 @@ npm install --global --production windows-build-toolsnpm config set msvs_version
 ```bash
   #Only once
   ./docker-pull-images.sh
-
   ./init.sh
+  
   ./up.sh
   ./down.sh
 ```
