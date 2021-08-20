@@ -8,17 +8,20 @@ gnome-terminal --tab -- bash -c "cd ./app; node ./sawtooth-sub-events.js; bash"
 
 sleep 1
 gnome-terminal --tab -- bash -c "cd ./app; 
+  echo \"Run the following scripts to test that everything is working:\";
   echo \"--sawtooth--\";
-  node ./sawtooth-post.js; 
-  sleep 1; 
-  node ./sawtooth-get.js; 
+  echo \"node ./sawtooth-post.js;\" 
+  echo \"node ./sawtooth-get.js;\" 
   echo \"--mongo--\";
-  node ./mongo-sample.js;
+  echo \"node ./mongo-sample.js;\"
   echo \"--postgresql--\";
-  node ./postgresql.js;
+  echo \"node ./postgresql.js;\"
   echo \"--kafka--\";
-  node ./kafka.js;
+  echo \"node ./kafka.js;\"
+  echo \"---------------\"
+  echo \"mongo-express, sawtooth-explorer, pgadmin\"
+  echo \"http://localhost:8081 http://localhost:8091 http://localhost:8008/blocks http://localhost:9095\"
+
   bash"
 
-
-firefox http://localhost:8081 http://localhost:8091 http://localhost:8008/blocks http://localhost:9095 &
+# firefox http://localhost:8081 http://localhost:8091 http://localhost:8008/blocks http://localhost:9095 &
