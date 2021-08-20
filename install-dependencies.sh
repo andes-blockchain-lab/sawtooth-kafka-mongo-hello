@@ -27,7 +27,7 @@ main(){
 	install_node
 	#apt-get install python build-essential -y
 	#install_fabric_samples
-	echo "lougout and login"
+	echo "Restart"
 }
 
 usage () {
