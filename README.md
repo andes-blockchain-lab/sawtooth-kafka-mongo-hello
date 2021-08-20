@@ -13,7 +13,6 @@ Use at least 4GB of RAM
 ./install-dependencies.sh
 #Restart
 nvm install v10
-
 ```
 
 ## Windows aditional dependencies (Requires revision)
@@ -39,6 +38,9 @@ npm install --global --production windows-build-toolsnpm config set msvs_version
 ## docker-compose
 
 ```bash
+  #Only once
+  ./docker-pull-images.sh
+
   ./init.sh
   ./up.sh
   ./down.sh
